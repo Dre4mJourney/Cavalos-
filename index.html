@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Posicionamento CSS</title>
+    <style>
+        /* Estilos básicos para a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            height: 2000px; 
+        }
+        .caixa {
+            width: 200px;
+            height: 100px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+
+        
+        .estatico {
+            position: static;
+            background-color: #7f8c8d;
+        }
+        .relativo {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            background-color: #3498db; 
+        }
+
+        .container-absoluto {
+            position: relative; 
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            border: 2px dashed #333;
+            margin-top: 40px;
+        }
+      
+        .absoluto {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #e74c3c;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .fixo {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #9b59b6;
+            z-index: 1000;
+        }
+
+        .pegajoso {
+            position: sticky;
+            top: 0;
+            background-color: #f1c40f; 
+            color: black;
+            width: 100%; 
+            z-index: 999;
+            text-align: center;
+            color:white;
+        }
+
+      .textomaroto {color:white }
+    </style>
+</head>
+<body>
+
+    <h1 style="color:white;">História do turfe japonês(corrida de cavalos)</h1>
+    <img src="https://i.namu.wiki/i/5q0xUYLQYzMTHptgLBaRkmM1NBnGmEkqSfXEh_KlS6LE3-IEtF4a80qLRyUGS_cV53-gGQWCOZ7q43yzQn_PEcnEZjCWlZJZ2_8PuIZF4C8piKe4KyQHl1zGK7ZKHEY_RSLNaW6F-xwC1LDM46LeeA.webp" height="150">
+    <p class="textomaroto">O quão grande é este esporte no Japão.</p>
+
+    <!-- 5. STICKY -->
+    <div class="caixa pegajoso">
+       O turfe (corrida de cavalos) no Japão não é apenas um esporte popular; é uma potência econômica e cultural absoluta, liderando o volume global de apostas no esporte e movimentando dezenas de bilhões de dólares anualmente.
+    </div>
+
+    <h2 style="color:white;">1.Como é conhecido o esporte localmente</h2>
+    <div class="caixa estatico">
+        Conhecido localmente como Keiba (競馬)
+    </div>
+
+    <h2 style="color:white;">2.Mercado de Apostas</h2>
+    <p class="textomaroto">O Japão possui o mercado de corridas de cavalos com o maior volume de apostas do mundo, sustentando uma trajetória histórica de crescimento contínuo.</p>
+    <div class="caixa relativo">
+        3,50 trilhões de ienes (aproximadamente 22,26 bilhões de dólares).
+    </div>
+    <p class="textomaroto">O mercado de apostas no turfe japonês é extremamente popular e lucrativo.</p>
+
+    <h2 style="color:white;">3.Tamanho do esporte no Japão</h2>
+    <div class="container-absoluto">
+         O turfe no Japão (Keiba) é um dos esportes mais populares e financeiramente robustos do país, movimentando anualmente o maior volume de apostas em corridas de cavalos do mundo. 
+        <div class="caixa absoluto">
+            realmente é bem popular
+        </div>
+    </div>
+    <p>Fica preso na parte inferior direita (bottom: 10px, right: 10px) do seu container "pai".</p>
+
+    <!-- 4. FIXED -->
+    <div class="caixa fixo">
+        nenhum cavalo japonês venceu o Prix de l'Arc de Triomphe até hoje.
+    </div>
+
+    <div style="margin-top: 100px;">
+        <h2></h2>
+        <p>Continue rolando a página...</p>
+        <p>Observe que a caixa <strong>ROXA (Fixed)</strong> permanece parada no canto inferior esquerdo da tela.</p>
+        <p>Observe que a caixa <strong>AMARELA (Sticky)</strong> ficou presa no topo da página quando você rolou por ela.</p>
+    </div>
+
+</body>
+</html>
